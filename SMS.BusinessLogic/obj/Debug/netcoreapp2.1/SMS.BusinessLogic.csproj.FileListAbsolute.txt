@@ -1,0 +1,9 @@
+C:\Users\Ambroise\source\repos\SMS\SMS.BusinessLogic\bin\Debug\netcoreapp2.1\SMS.BusinessLogic.deps.json
+C:\Users\Ambroise\source\repos\SMS\SMS.BusinessLogic\bin\Debug\netcoreapp2.1\SMS.BusinessLogic.dll
+C:\Users\Ambroise\source\repos\SMS\SMS.BusinessLogic\bin\Debug\netcoreapp2.1\SMS.BusinessLogic.pdb
+C:\Users\Ambroise\source\repos\SMS\SMS.BusinessLogic\obj\Debug\netcoreapp2.1\SMS.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\Ambroise\source\repos\SMS\SMS.BusinessLogic\obj\Debug\netcoreapp2.1\SMS.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Ambroise\source\repos\SMS\SMS.BusinessLogic\obj\Debug\netcoreapp2.1\SMS.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\Ambroise\source\repos\SMS\SMS.BusinessLogic\obj\Debug\netcoreapp2.1\SMS.BusinessLogic.AssemblyInfo.cs
+C:\Users\Ambroise\source\repos\SMS\SMS.BusinessLogic\obj\Debug\netcoreapp2.1\SMS.BusinessLogic.dll
+C:\Users\Ambroise\source\repos\SMS\SMS.BusinessLogic\obj\Debug\netcoreapp2.1\SMS.BusinessLogic.pdb
