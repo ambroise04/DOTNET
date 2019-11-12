@@ -1,13 +1,22 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SMS.BusinessLogic;
+using Repository;
+using SMS.Domain;
+using SMS.Repository.Fournisseurs;
+using SMS.Repository.Ingredients;
+using SMS.Repository.Sandwhich;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace UnitTest
 {
     [TestClass]
     public class UnitTest1
     {
+        [TestInitialize]
+        public void Init()
+        {
+
+        }
+
         [DataTestMethod]
 
         [DataRow(Langue.French, "Jambon*, Oignon")]
@@ -16,14 +25,15 @@ namespace UnitTest
 
         public void GetListeDesIngredients_AvecAllergeneOuPas(Langue langue, string result)
         {
+            #region
             //Traduction -> Nom des ingrédients
             NamesInAllLanguages ing1 = new NamesInAllLanguages("Jambon", "Ham", "Ham");
             NamesInAllLanguages ing2 = new NamesInAllLanguages("Oignon", "Onion", "Ui");
             NamesInAllLanguages ing3 = new NamesInAllLanguages("Blé", "Corn", "Tarwe");
-            NamesInAllLanguages ing4 = new NamesInAllLanguages("Avoine", "Oat", "Haver");            
+            NamesInAllLanguages ing4 = new NamesInAllLanguages("Avoine", "Oat", "Haver");
 
             //Ingredients
-            List<Ingredient> ingrédients1 = new List<Ingredient> 
+            List<Ingredient> ingrédients1 = new List<Ingredient>
             {
                 new Ingredient(ing1, true),
                 new Ingredient(ing2, false)
@@ -53,12 +63,67 @@ namespace UnitTest
             sandwich2.Ingrédients = ingrédients2;
 
             //Ajout des Sandwiches d'un client
-            
+
             f1.Sandwiches.Add(sandwich1);
             f1.Sandwiches.Add(sandwich2);
+            #endregion
+            //Act
+            IRepository<Sandwich, int> repo = new SandwichFakeRepository();
+            //Arrange
+            repo.Insert(sandwich1);
+            repo.Insert(sandwich2);
+            //Assert
+            Assert.AreEqual(2, (repo.Get() as List<Sandwich>).Count);
+        }
 
-            //Assert.AreEqual(result, sandwich1.GetListIngredients(langue));
-            //Assert.AreEqual(result, f1.ToString(f1.LanguageChoice));
+        [TestMethod]
+        public void InsertGet_Ingredient_RetourneNombreDIngredientsAjoutes()
+        {
+            //Act
+            //Traduction -> Nom des ingrédients
+            NamesInAllLanguages ing1 = new NamesInAllLanguages("Jambon", "Ham", "Ham");
+            NamesInAllLanguages ing2 = new NamesInAllLanguages("Oignon", "Onion", "Ui");
+
+            //Ingredients
+            var ingredient1 = new Ingredient(ing1, true);
+            var ingredient2 = new Ingredient(ing2, false);
+            ingredient1.Id = 1;
+            ingredient2.Id = 2;
+
+            IRepository<Ingredient, int> repo = new IngredientFakeRepository();
+
+            //Arrange
+            repo.Insert(ingredient1);
+            repo.Insert(ingredient2);
+
+            //Assert
+            Assert.AreEqual(2, ((Ingredient[])repo.Get()).Length);
+        }
+
+        [TestMethod]
+        public void InsertGet_Fournisseur_RetourneNombreDeFournisseursAjoutes()
+        {
+            //Act
+            //Traduction -> Nom des ingrédients
+            NamesInAllLanguages ing1 = new NamesInAllLanguages("Jambon", "Ham", "Ham");
+            NamesInAllLanguages ing2 = new NamesInAllLanguages("Oignon", "Onion", "Ui");
+
+            //Ingredients
+            var ingredient1 = new Ingredient(ing1, true);
+            var ingredient2 = new Ingredient(ing2, false);
+
+            //Creation des fournisseurs
+            Fournisseur f1 = new Fournisseur { Id = 1, Name = "Gauthier", ContactName = "Gauthier", Email = "gauthier@gmail.com", LanguageChoice = Langue.French };
+            Fournisseur f2 = new Fournisseur { Id = 2, Name = "Ambroise", ContactName = "Ambroise", Email = "ambroise@gmail.com", LanguageChoice = Langue.English };
+
+            IRepository<Fournisseur, int> repo = new FournisseurRepository();
+
+            //Arrange
+            repo.Insert(f1);
+            repo.Insert(f2);
+
+            //Assert
+            Assert.AreEqual(2, (repo.Get() as List<Fournisseur>).Count);
         }
     }
 }

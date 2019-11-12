@@ -1618,24 +1618,41 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Repository/1.0.0": {
-        "type": "project",
-        "framework": "Unsupported,Version=v0.0",
-        "compile": {
-          "bin/placeholder/Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Repository.dll": {}
-        }
-      },
       "SMS.BusinessLogic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "SMS.Domain": "1.0.0",
+          "SMS.Repository": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/SMS.BusinessLogic.dll": {}
         },
         "runtime": {
           "bin/placeholder/SMS.BusinessLogic.dll": {}
+        }
+      },
+      "SMS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/SMS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMS.Domain.dll": {}
+        }
+      },
+      "SMS.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "SMS.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SMS.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMS.Repository.dll": {}
         }
       }
     }
@@ -5745,15 +5762,20 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Repository/1.0.0": {
-      "type": "project",
-      "path": "../Repository/Repository.csproj",
-      "msbuildProject": "../Repository/Repository.csproj"
-    },
     "SMS.BusinessLogic/1.0.0": {
       "type": "project",
       "path": "../SMS.BusinessLogic/SMS.BusinessLogic.csproj",
       "msbuildProject": "../SMS.BusinessLogic/SMS.BusinessLogic.csproj"
+    },
+    "SMS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SMS.Domain/SMS.Domain.csproj",
+      "msbuildProject": "../SMS.Domain/SMS.Domain.csproj"
+    },
+    "SMS.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/SMS.Repository.csproj",
+      "msbuildProject": "../Repository/SMS.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5762,8 +5784,9 @@
       "MSTest.TestFramework >= 1.3.2",
       "Microsoft.NET.Test.Sdk >= 15.8.0",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Repository >= 1.0.0",
-      "SMS.BusinessLogic >= 1.0.0"
+      "SMS.BusinessLogic >= 1.0.0",
+      "SMS.Domain >= 1.0.0",
+      "SMS.Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5792,11 +5815,17 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\Repository\\Repository.csproj"
+            "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\Repository\\SMS.Repository.csproj": {
+              "projectPath": "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\Repository\\SMS.Repository.csproj"
             },
             "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.BusinessLogic\\SMS.BusinessLogic.csproj": {
               "projectPath": "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.BusinessLogic\\SMS.BusinessLogic.csproj"
+            },
+            "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.Domain\\SMS.Domain.csproj": {
+              "projectPath": "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.Domain\\SMS.Domain.csproj"
+            },
+            "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.Repository\\SMS.Repository.csproj": {
+              "projectPath": "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.Repository\\SMS.Repository.csproj"
             }
           }
         }
@@ -5842,16 +5871,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project Repository is not compatible with netcoreapp2.1 (.NETCoreApp,Version=v2.1). Project Repository supports: netcoreapp3.0 (.NETCoreApp,Version=v3.0)",
-      "libraryId": "Repository",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }

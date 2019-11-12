@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "SMS.Repository/1.0.0": {
+        "dependencies": {
+          "SMS.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SMS.Repository.dll": {}
+        }
+      },
+      "SMS.Domain/1.0.0": {
+        "runtime": {
+          "SMS.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SMS.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SMS.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

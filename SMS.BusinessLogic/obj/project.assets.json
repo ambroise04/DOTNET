@@ -207,6 +207,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "SMS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/SMS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMS.Domain.dll": {}
+        }
+      },
+      "SMS.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "SMS.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SMS.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SMS.Repository.dll": {}
+        }
       }
     }
   },
@@ -681,11 +704,23 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "SMS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SMS.Domain/SMS.Domain.csproj",
+      "msbuildProject": "../SMS.Domain/SMS.Domain.csproj"
+    },
+    "SMS.Repository/1.0.0": {
+      "type": "project",
+      "path": "../SMS.Repository/SMS.Repository.csproj",
+      "msbuildProject": "../SMS.Repository/SMS.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "SMS.Domain >= 1.0.0",
+      "SMS.Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -713,7 +748,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.Domain\\SMS.Domain.csproj": {
+              "projectPath": "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.Domain\\SMS.Domain.csproj"
+            },
+            "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.Repository\\SMS.Repository.csproj": {
+              "projectPath": "C:\\Users\\student\\source\\repos\\DOTNET\\DOTNET\\SMS.Repository\\SMS.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

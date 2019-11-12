@@ -15,6 +15,9 @@ C:\Users\Ambroise\source\repos\SMS\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.Ass
 C:\Users\Ambroise\source\repos\SMS\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.csproj.CopyComplete
 C:\Users\Ambroise\source\repos\SMS\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.dll
 C:\Users\Ambroise\source\repos\SMS\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.pdb
+C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.AssemblyInfo.cs
+C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.csprojAssemblyReference.cache
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -24,10 +27,11 @@ C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\Uni
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\UnitTest.dll
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\UnitTest.pdb
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\SMS.BusinessLogic.dll
+C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\SMS.Domain.dll
+C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\SMS.Repository.dll
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\SMS.BusinessLogic.pdb
-C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.csprojAssemblyReference.cache
-C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.AssemblyInfoInputs.cache
-C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.AssemblyInfo.cs
+C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\SMS.Domain.pdb
+C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\bin\Debug\netcoreapp2.1\SMS.Repository.pdb
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.csproj.CopyComplete
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.dll
 C:\Users\student\source\repos\DOTNET\DOTNET\UnitTest\obj\Debug\netcoreapp2.1\UnitTest.pdb

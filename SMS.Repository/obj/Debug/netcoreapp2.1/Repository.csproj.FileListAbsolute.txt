@@ -1,0 +1,3 @@
+C:\Users\student\source\repos\DOTNET\DOTNET\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\DOTNET\DOTNET\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+C:\Users\student\source\repos\DOTNET\DOTNET\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache

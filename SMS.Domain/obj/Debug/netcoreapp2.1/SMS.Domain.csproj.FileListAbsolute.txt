@@ -1,0 +1,8 @@
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Domain\bin\Debug\netcoreapp2.1\SMS.Domain.deps.json
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Domain\bin\Debug\netcoreapp2.1\SMS.Domain.dll
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Domain\bin\Debug\netcoreapp2.1\SMS.Domain.pdb
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Domain\obj\Debug\netcoreapp2.1\SMS.Domain.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Domain\obj\Debug\netcoreapp2.1\SMS.Domain.AssemblyInfo.cs
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Domain\obj\Debug\netcoreapp2.1\SMS.Domain.dll
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Domain\obj\Debug\netcoreapp2.1\SMS.Domain.pdb
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Domain\obj\Debug\netcoreapp2.1\SMS.Domain.csprojAssemblyReference.cache

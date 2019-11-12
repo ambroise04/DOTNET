@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Domain\SMS.Domain.csproj" />
+    <ProjectReference Include="..\SMS.Repository\SMS.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

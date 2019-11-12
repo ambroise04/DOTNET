@@ -1,0 +1,14 @@
+C:\Users\student\source\repos\DOTNET\DOTNET\Repository\obj\Debug\netcoreapp2.1\SMS.Repository.csprojAssemblyReference.cache
+C:\Users\student\source\repos\DOTNET\DOTNET\Repository\obj\Debug\netcoreapp2.1\SMS.Repository.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\DOTNET\DOTNET\Repository\obj\Debug\netcoreapp2.1\SMS.Repository.AssemblyInfo.cs
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\obj\Debug\netcoreapp2.1\SMS.Repository.csprojAssemblyReference.cache
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\obj\Debug\netcoreapp2.1\SMS.Repository.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\obj\Debug\netcoreapp2.1\SMS.Repository.AssemblyInfo.cs
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\bin\Debug\netcoreapp2.1\SMS.Repository.deps.json
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\bin\Debug\netcoreapp2.1\SMS.Repository.dll
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\bin\Debug\netcoreapp2.1\SMS.Repository.pdb
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\bin\Debug\netcoreapp2.1\SMS.Domain.dll
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\bin\Debug\netcoreapp2.1\SMS.Domain.pdb
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\obj\Debug\netcoreapp2.1\SMS.Repository.csproj.CopyComplete
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\obj\Debug\netcoreapp2.1\SMS.Repository.dll
+C:\Users\student\source\repos\DOTNET\DOTNET\SMS.Repository\obj\Debug\netcoreapp2.1\SMS.Repository.pdb

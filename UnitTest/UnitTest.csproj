@@ -13,7 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Repository\SMS.Repository.csproj" />
     <ProjectReference Include="..\SMS.BusinessLogic\SMS.BusinessLogic.csproj" />
+    <ProjectReference Include="..\SMS.Domain\SMS.Domain.csproj" />
+    <ProjectReference Include="..\SMS.Repository\SMS.Repository.csproj" />
   </ItemGroup>
 
 </Project>
