@@ -4,9 +4,9 @@ using System.Text;
 
 namespace SMS.BusinessLogic
 {
-    public class Ingrédient
+    public class Ingredient
     {
-        public Ingrédient(NamesInAllLanguages translated, bool allergene)
+        public Ingredient(NamesInAllLanguages translated, bool allergene)
         {
             Name = translated;
             Allergene = allergene;

@@ -13,9 +13,10 @@ namespace SMS.BusinessLogic
             Fournisseur = fournisseur;
         }
 
+        public int Id { get; set; }
         public NamesInAllLanguages Name { get; set; }
         public Fournisseur Fournisseur { get; set; }
-        public List<Ingrédient> Ingrédients { get; set; }
+        public List<Ingredient> Ingrédients { get; set; }
 
         public string ToString(Langue langue)
         {

@@ -23,16 +23,16 @@ namespace UnitTest
             NamesInAllLanguages ing4 = new NamesInAllLanguages("Avoine", "Oat", "Haver");            
 
             //Ingredients
-            List<Ingrédient> ingrédients1 = new List<Ingrédient> 
+            List<Ingredient> ingrédients1 = new List<Ingredient> 
             {
-                new Ingrédient(ing1, true),
-                new Ingrédient(ing2, false)
+                new Ingredient(ing1, true),
+                new Ingredient(ing2, false)
             };
 
-            List<Ingrédient> ingrédients2 = new List<Ingrédient>
+            List<Ingredient> ingrédients2 = new List<Ingredient>
             {
-                new Ingrédient(ing3, true),
-                new Ingrédient(ing4, false)
+                new Ingredient(ing3, true),
+                new Ingredient(ing4, false)
             };
 
             //Traduction -> Nom des sandwiches
