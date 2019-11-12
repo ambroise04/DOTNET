@@ -6,9 +6,18 @@ namespace SMS.BusinessLogic
 {
     public class Ingrédient
     {
-        public string NameFrench { get; set; }
-        public string NameEnglish { get; set; }
-        public string NameDeutch { get; set; }
+        public Ingrédient(NamesInAllLanguages translated, bool allergene)
+        {
+            Name = translated;
+            Allergene = allergene;
+        }
+
+        public NamesInAllLanguages Name { get; set; }
         public bool Allergene { get; set; }
+
+        public string ToString(Langue langue)
+        {
+            return Allergene ? Name.ToString(langue) + "*" : Name.ToString(langue);
+        }
     }
 }
